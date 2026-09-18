@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-labelledby="title desc">
+  <title id="title">Primary human-gold Unit F1 results</title>
+  <desc id="desc">Length-only DP scores 53.85 percent, frozen BGE-M3 plus DP 70.22 percent, fine-tuned Qwen reranker plus DP 76.32 percent, and score fusion 70.22 percent.</desc>
+  <style>
+    .title{font:700 28px system-ui,sans-serif;fill:#173042}.sub{font:500 15px system-ui,sans-serif;fill:#607580}
+    .label{font:600 17px system-ui,sans-serif;fill:#304b5d}.value{font:700 20px system-ui,sans-serif;fill:#173042}
+    .axis{stroke:#b9c8cf;stroke-width:1}.tick{font:500 13px system-ui,sans-serif;fill:#758892}
+  </style>
+  <rect width="1000" height="480" fill="#f8fafb"/>
+  <text x="52" y="50" class="title">Exact alignment-unit F1 on protected human-gold contexts</text>
+  <text x="52" y="78" class="sub">20 representative contexts · 193 gold units · challenge cases reported separately</text>
+  <line x1="300" y1="112" x2="300" y2="412" class="axis"/>
+  <line x1="460" y1="112" x2="460" y2="412" class="axis"/>
+  <line x1="620" y1="112" x2="620" y2="412" class="axis"/>
+  <line x1="780" y1="112" x2="780" y2="412" class="axis"/>
+  <line x1="940" y1="112" x2="940" y2="412" class="axis"/>
+  <text x="294" y="435" class="tick">0</text><text x="449" y="435" class="tick">20</text>
+  <text x="609" y="435" class="tick">40</text><text x="769" y="435" class="tick">60</text>
+  <text x="929" y="435" class="tick">80</text>
+
+  <text x="52" y="151" class="label">Length-only DP</text>
+  <rect x="300" y="128" width="431" height="38" rx="5" fill="#9eb1ba"/>
+  <text x="747" y="154" class="value">53.85%</text>
+
+  <text x="52" y="226" class="label">Frozen BGE-M3 + DP</text>
+  <rect x="300" y="203" width="562" height="38" rx="5" fill="#4d8bab"/>
+  <text x="878" y="229" class="value">70.22%</text>
+
+  <text x="52" y="301" class="label">Fine-tuned Qwen + DP</text>
+  <rect x="300" y="278" width="611" height="38" rx="5" fill="#24836c"/>
+  <text x="820" y="304" style="font:700 20px system-ui,sans-serif;fill:white">76.32%</text>
+  <rect x="813" y="327" width="105" height="25" rx="12" fill="#d49b21"/>
+  <text x="831" y="344" style="font:700 13px system-ui,sans-serif;fill:white">+6.10 pt</text>
+
+  <text x="52" y="382" class="label">BGE-Qwen fusion + DP</text>
+  <rect x="300" y="359" width="562" height="38" rx="5" fill="#7195a5"/>
+  <text x="878" y="385" class="value">70.22%</text>
+  <text x="52" y="465" class="sub">Unit F1 is a strict group-boundary metric, not whole-corpus accuracy.</text>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "scope": "Aggregate metrics only; no copyrighted text or sentence-level annotation is included.",
+  "primary_set": {
+    "contexts": 20,
+    "japanese_sentences": 214,
+    "chinese_sentences": 213,
+    "gold_alignment_units": 193,
+    "methods": {
+      "length_only_dp": {"unit_f1": 0.5385},
+      "frozen_bge_m3_dp": {"unit_f1": 0.7022},
+      "fine_tuned_qwen3_reranker_dp": {"unit_f1": 0.7632},
+      "bge_qwen_score_fusion_dp": {"unit_f1": 0.7022}
+    },
+    "paired_qwen_minus_bge_bootstrap": {
+      "samples": 10000,
+      "interval_95_percentile": [0.0169, 0.1170],
+      "fraction_above_zero": 0.9966,
+      "interpretation": "Uncertainty diagnostic, not a formal significance test."
+    }
+  },
+  "challenge_set": {
+    "contexts": 12,
+    "gold_alignment_units": 119,
+    "frozen_bge_m3_dp_unit_f1": 0.7091,
+    "fine_tuned_qwen3_reranker_dp_unit_f1": 0.7273
+  },
+  "data_isolation": {
+    "training_queries": 16921,
+    "training_candidates": 219704,
+    "gold_train_sentence_id_overlap": 0,
+    "gold_train_normalized_sentence_text_overlap": 0
+  }
+}

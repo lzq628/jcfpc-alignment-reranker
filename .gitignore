@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Private or copyrighted research artifacts
+data/private/
+artifacts/
+checkpoints/
+runs/
+*.sqlite
+*.db
+*.npz
+*.xlsx
+*.tar.gz
+scores.jsonl
+train.jsonl
+dev.jsonl
+gold_windows.jsonl
