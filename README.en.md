@@ -18,6 +18,17 @@ text, human annotations, trained LoRA weights, or text-bearing model outputs.
 Instead, it provides a synthetic runnable example, the monotonic DP implementation,
 Qwen3-Reranker-8B LoRA training and inference code, and aggregate evaluation results.
 
+## Associated conference paper
+
+The corpus design, embedding-assisted alignment, and quality-control workflow that
+underpin this repository were presented at APCLC2026:
+
+> Lian, Zeqi. 2026. “Embedding-Assisted Construction of a Japanese-Chinese Parallel Corpus of Contemporary Novels.” *The 6th Asia Pacific Corpus Linguistics Conference (APCLC2026)*.
+
+The Qwen3 reranker LoRA experiment in this repository is a follow-up extension of
+that work. Proceedings pages, URL, and DOI will be added after the official
+bibliographic record becomes available.
+
 ## Highlights
 
 - Monotonic DP with `1:8–8:1` sentence groups and explicit gap moves
@@ -134,6 +145,23 @@ tests/                     DP and metric regression tests
 - Gold annotation is single-author; no inter-annotator agreement is available.
 - The challenge set is separate and was never used for parameter tuning.
 - Adapter redistribution and memorization risk have not been cleared, so weights are private.
+
+## Citation
+
+For the JCFPC construction method, original alignment workflow, or research context
+of this repository, please currently cite the APCLC2026 presentation:
+
+```bibtex
+@inproceedings{lian2026jcfpc,
+  author    = {Lian, Zeqi},
+  title     = {Embedding-Assisted Construction of a Japanese-Chinese Parallel Corpus of Contemporary Novels},
+  booktitle = {The 6th Asia Pacific Corpus Linguistics Conference (APCLC2026)},
+  year      = {2026}
+}
+```
+
+GitHub's **Cite this repository** control exposes the same provisional record.
+Update it with the official proceedings metadata when available.
 
 ## License
 

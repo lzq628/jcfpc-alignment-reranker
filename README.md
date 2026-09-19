@@ -17,6 +17,16 @@
 実データ、人工注釈、学習済み LoRA、候補スコアは公開していません。代わりに、動作確認用の
 合成データ、DP 実装、Qwen3-Reranker-8B の LoRA 学習・推論コード、集計済み評価結果を提供します。
 
+## 関連研究発表
+
+本リポジトリの基盤となる JCFPC のコーパス設計、埋め込み支援型アラインメント、
+品質管理ワークフローは、以下の APCLC2026 発表で報告しました。
+
+> Lian, Zeqi. 2026. “Embedding-Assisted Construction of a Japanese-Chinese Parallel Corpus of Contemporary Novels.” *The 6th Asia Pacific Corpus Linguistics Conference (APCLC2026)*.
+
+本リポジトリの Qwen3 reranker LoRA 実験は、上記研究を発展させた後続実験です。
+Proceedings のページ、URL、DOI 等は公式書誌情報の公開後に追記します。
+
 ## 要点
 
 - 日本語・中国語の文群を `1:8` から `8:1` まで扱い、省略も表現できる単調 DP
@@ -147,6 +157,23 @@ tests/                     DP と評価指標の回帰テスト
 - gold annotation は単独 annotator によるもので、inter-annotator agreement はありません。
 - challenge set は主要結果と分離し、parameter tuning には使用していません。
 - 学習済み adapter の再配布可能性と memorization risk は未評価のため、weight は公開していません。
+
+## 引用
+
+JCFPC の構築法、元の alignment workflow、または本リポジトリの研究背景を参照する場合は、
+現時点では次の APCLC2026 発表を引用してください。
+
+```bibtex
+@inproceedings{lian2026jcfpc,
+  author    = {Lian, Zeqi},
+  title     = {Embedding-Assisted Construction of a Japanese-Chinese Parallel Corpus of Contemporary Novels},
+  booktitle = {The 6th Asia Pacific Corpus Linguistics Conference (APCLC2026)},
+  year      = {2026}
+}
+```
+
+GitHub の **Cite this repository** からも同じ情報を取得できます。公式 proceedings の
+書誌情報が確定するまで、この引用は暫定版です。
 
 ## ライセンス
 
